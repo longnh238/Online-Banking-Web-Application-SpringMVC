@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Group 8 Bank</title>
+<style>
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f8f8;
+}
+
+.container {
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	color: #32475e;
+	text-align: center;
+	font-weight: bold;
+}
+
+p {
+	margin-bottom: 20px;
+	color: #546e7a;
+	line-height: 1.6;
+}
+
+.footer {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 12px;
+	color: #78909c;
+}
+
+.footer a {
+	color: #607d8b;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+}
+
+.divider {
+	margin: 20px auto;
+	width: 80%;
+	border-bottom: 1px solid #ccc;
+}
+
+.signature {
+	text-align: center;
+	font-style: italic;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to Group 8 Bank!</h1>
+		<p>
+			Dear <span th:text="${name}"></span>,
+		</p>
+		<p>We are thrilled to welcome you as a valued customer to Our
+			Bank. Your trust means the world to us, and we are committed to
+			providing you with exceptional banking services.</p>
+		<p>Your account has been successfully created, and you can now
+			enjoy a wide range of banking features tailored to your needs.</p>
+		<p>If you have any questions or require assistance, please do not
+			hesitate to contact our dedicated customer support team. We are here
+			to serve you.</p>
+		<p>Thank you once again for choosing Our Bank. We are excited to
+			embark on this journey with you.</p>
+		<div class="divider"></div>
+		<p class="signature">
+			Warm regards,<br> The Team at Group 8 Bank
+		</p>
+		<div class="footer">
+			<p>
+				This email was sent to <span th:text="${email}"></span>. If you
+				believe you received this email by mistake, please disregard it.
+			</p>
+			<p>&copy; 2024 Group 8 Bank. All rights reserved.</p>
+		</div>
+	</div>
+</body>
+</html>
